@@ -10,6 +10,4 @@ if (name === undefined) {
 // undefined for function arguments
 let square = function(num) {
     console.log(num)
-}
-
-square()
+};
