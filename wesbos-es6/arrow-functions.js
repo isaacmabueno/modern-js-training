@@ -30,6 +30,19 @@ console.log(fullNames5);
 
 
 
-const sayMyName = (name) => {alert(`hello ${name}!`)};
+// const sayMyName = (name) => {alert(`hello ${name}!`)};
 
-sayMyName('Isaac');
+// sayMyName('Isaac');
+
+const race = '100 dash'
+const winners = ['Hunter Gath', 'Singa Song', 'Imda Bos']
+
+const win = winners.map((winner, i) => ({name: winner, race: race, place: i + 1}))
+
+console.table(win);
+
+const ages = [10, 23, 64, 98, 12, 54, 32, 29, 27, 78, 64]
+
+const old = ages.filter(age => age >= 60);
+
+console.log(old);
