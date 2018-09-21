@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>When not to use arrow functions</title>
+</head>
+<body>
+<style>
+    button {
+        font-size: 25px;
+        background: #006064;
+        color: #e0f2f1;
+        border-radius: 50px;
+        border: none !important;
+        max-width: 250px;
+        width: 100%;
+        padding: 15px 0 !important;
+    }
+    .on {
+        background: #ef6c00;
+    }
+</style>
+
+<button id='btn'>DialogTech</button>
+
+<script>
+const dtBtn = document.querySelector('#btn');
+dtBtn.addEventListener('click', function() {
+    this.classList.toggle('on');
+});
+</script>
+
+
+<!-- // when you need a method to bind to an object -->
+<script>
+
+const person = {
+    points: 23,
+    score: function() {
+        console.log(this);
+        this.points++;
+    }
+}
+</script>
+
+<!-- // when you need to add a prototype method     -->
+<script>
+class Car {
+        constructor(make,color) {
+            this.make = make;
+            this.color = color;
+        }
+    }
+    
+    const beemer = new Car('BMW', 'red');
+    const subaru = new Car('Subaru', 'grey');
+    
+    Car.prototype.summarize = function() {
+        return 'this care is a `${this.make}` in the color `${this.color}`';
+    };
+
+    </script>
+</body>
+</html>
