@@ -58,9 +58,20 @@ class Car {
     const subaru = new Car('Subaru', 'grey');
     
     Car.prototype.summarize = function() {
-        return 'this care is a `${this.make}` in the color `${this.color}`';
+        return 'this car is a `${this.make}` in the color `${this.color}`';
     };
 
+    </script>
+
+    <!-- //when you need arguments object -->
+    <script>
+    const orderChildren = function() {
+        const Children = Array.from(arguments);
+        return children.map((child, i) => {
+            return `${child}` was child #`${i + 1}`;
+        })
+        console.log(arguments);
+    }
     </script>
 </body>
 </html>
