@@ -1,11 +1,11 @@
 //Function - input (argument/arguments), code, output ( return value )
-let greetUser = function() {
-    console.log('Welcome user!')
-}
+// let greetUser = function() {
+//     console.log('Welcome user!')
+// }
 
-greetUser();
-greetUser();
-greetUser();
+// greetUser();
+// greetUser();
+// greetUser();
 
 // let square = function(num) {
 //     let result = num * num
@@ -62,13 +62,19 @@ greetUser();
 
 //Challenge Area –
 
+// challenge area
 
-let convertFarenheitToCelcius = function(farenheit) {
-    let celcius = farenheit - 32 * 5/9
-    return celcius
+// this will take the temp in farenheit and run the conversion alg and return the temp in converFehrenheitToCelsius
+// call a couple of times (32 -> 0) (68 ->20)
+// pring the converted values
+
+let convertFahrenheitToCelsius = function (fahrenheit) {
+    let tempConversion = (fahrenheit - 32) * 5/9;
+    return tempConversion;
 }
 
-let tempOne = convertFarenheitToCelcius(32)
-let tempTwo = convertFarenheitToCelcius(68)
+tempOne = convertFahrenheitToCelsius(32);
+tempTwo = convertFahrenheitToCelsius(68);
 
-console.log(tempOne, tempTwo)
+console.log(tempOne);
+console.log(tempTwo);

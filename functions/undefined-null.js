@@ -1,13 +1,7 @@
-//undefined for variable
-let name 
-name = 'jan'
-if (name === undefined) {
-    console.log('please provide a name')
-} else {
-    console.log('your name is ' + name)
-}
+let name = 'Isaac'
 
-// undefined for function arguments
-let square = function(num) {
-    console.log(num)
-};
+if ( name === "undefined") {
+    console.log('name is undefinied')
+} else {
+    console.log(name);
+}
