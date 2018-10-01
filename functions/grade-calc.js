@@ -10,29 +10,26 @@
 
 
 let gradeCalc = function(studentScore = 0, possibleScore = 100) {
-    let totalPoss = `${studentScore} / ${possibleScore} –`;
+    let totalPoss = (studentScore / possibleScore) * 100;
+    let letterGrade = ''
    
-    if ( studentScore >= 90) {
-        console.log('score is great than than 90')
-    } else if ( studentScore >= 80) {
-        console.log('your score is above average – B');
-    } else if ( studentScore >= 70) {
-        console.log('Your score is average- C');
-    } else if ( studentScore >= 60) {
-        console.log('You barely passed – D');
-    } else if ( studentScore <= 60) {
-        console.log('You Failed – F');
+    if ( totalPoss >= 90) {
+        letterGrade = 'A';
+    } else if ( totalPoss >= 80) {
+        letterGrade = 'B';
+    } else if ( totalPoss >= 70) {
+        letterGrade = 'C';
+    } else if ( totalPoss >= 60) {
+        letterGrade = 'D';
+    } else {
+        letterGrade = 'F';
     }
-    return totalPoss;
+    // return totalPoss;
+        return(`You got the letter grade ${letterGrade} – (${totalPoss})%`);
+
+    
 }
 
-
-// if studentScore >= 90 {
-//     console.log('more than 90')
-// } else {
-//     console.log('less than 90');
-// }
-
-let a = gradeCalc(87, undefined)
+let a = gradeCalc(77, undefined)
 
 console.log(a);
