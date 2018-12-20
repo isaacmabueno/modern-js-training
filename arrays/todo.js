@@ -11,8 +11,19 @@ const todos = [
     'Sleep'
 ]
 
-console.log(todos.length);
-console.log(`You have ${todos.length} Todos`);
-console.log(`Todo Text: ${todos[0]}`);
-console.log(`Todo: ${todos[todos.length -2]}`)
 
+//delete the third item
+// add a new item onto the end
+// remove the first item from the list
+
+
+// console.log(todos.length);
+
+// console.log(`Todo Text: ${todos[0]}`);
+// console.log(`Todo: ${todos[todos.length -2]}`)
+todos.splice(2,1);
+todos.push('Last item');
+todos.shift();
+
+console.log(todos)
+console.log(`You have ${todos.length} Todos`);
