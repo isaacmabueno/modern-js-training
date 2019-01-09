@@ -12,6 +12,12 @@ const todos = [
 ]
 
 
+for (let i = 0; i < todos.length; i++) {
+    const num = i + 1;
+    const todo = todos[i];
+    console.log(`${num}. ${todo}`)
+}
+
 //delete the third item
 // add a new item onto the end
 // remove the first item from the list
@@ -21,9 +27,14 @@ const todos = [
 
 // console.log(`Todo Text: ${todos[0]}`);
 // console.log(`Todo: ${todos[todos.length -2]}`)
-todos.splice(2,1);
-todos.push('Last item');
-todos.shift();
 
-console.log(todos)
-console.log(`You have ${todos.length} Todos`);
+
+// todos.splice(2,1);
+// todos.push('Last item');
+// todos.shift();
+
+// todos.forEach(function(todo, index) {
+//     console.log('---------');
+//     const num = index +1;
+//     console.log(`${num}. ${todo}`);
+// })
