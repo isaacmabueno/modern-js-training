@@ -1,12 +1,68 @@
 // push, pop, shift, unshift, splice
 
-const notes = [
-    'Note 1',
-    'Note 2',
-    'Note 3',
-    'Note 4',
-    'Note 5'
-]
+const notes = [{
+    title: 'title one',
+    body: 'body one'
+}, {
+    title: 'title two',
+    body: 'body two'
+}, {
+    title: 'title three',
+    body: 'body three'
+}, {
+    title: 'title four',
+    body: 'body four'
+}, {
+    title: 'title five',
+    body: 'body five'
+}, {
+    title: 'title six',
+    body: 'body six'
+}, {
+    title: 'Title seven',
+    body: 'body seven'
+}]
+
+const findNote = function(notes, noteTitle) {
+    const search = notes.findIndex(function (note, search) {
+        return note.title.toLowerCase() === noteTitle.toLowerCase()
+    })
+    return notes[search]
+}
+
+const note = findNote(notes, 'title seven')
+console.log(note)
+
+
+
+
+
+
+// console.log(note);
+
+// const searchFunc = notes.findIndex(function(note, searchFunc) {
+//     let seven = 'title seven'
+//     return note.title.toLowerCase() === seven.toLowerCase();
+// })
+
+// console.log(searchFunc);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for (let i=0; i<notes.length; i++) {
+//     console.log()
+// }
 
 // console.log(notes.pop());
 // notes.push('My New Note', 'another note', 'last note');
